@@ -9,9 +9,9 @@
  * ```
  */
 export const ROUTES = {
-	ABOUT: "/about",
-	DOCS: "/docs/getting-started/introduction",
-	FAQ: "/faq",
-	FEATURES: "/features",
 	HOME: "/",
+	DOCS: "/docs/getting-started/introduction",
+	BLOCKS: "/blocks",
+	COMPONENTS: "/components",
+	BLOG: "/blog",
 } as const;

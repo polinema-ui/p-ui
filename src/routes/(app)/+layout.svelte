@@ -9,7 +9,7 @@
 
 	let { children }: { children: Snippet } = $props();
 
-	const footerLinks = ["Home", "Features", "About", "FAQ", "Docs"];
+	const footerLinks = ["Home", "Docs", "Blocks", "Components", "Blog"];
 
 	const socials: Array<{ label: string; icon: typeof GithubIcon | typeof Linkedin01Icon; href: string }> = [
 		{ label: "Github", icon: GithubIcon, href: "https://github.com/polinema-ui/website" },

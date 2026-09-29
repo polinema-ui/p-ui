@@ -6,10 +6,10 @@ import { ROUTES } from "$lib/constants/routes";
  */
 export const MENUS = [
 	{ label: "Home", href: ROUTES.HOME },
-	{ label: "Features", href: ROUTES.FEATURES },
-	{ label: "About", href: ROUTES.ABOUT },
-	{ label: "FAQ", href: ROUTES.FAQ },
 	{ label: "Docs", href: ROUTES.DOCS },
+	{ label: "Blocks", href: ROUTES.BLOCKS },
+	{ label: "Components", href: ROUTES.COMPONENTS },
+	{ label: "Blog", href: ROUTES.BLOG },
 ] as const satisfies readonly {
 	label: string;
 	href: string;
