@@ -56,8 +56,7 @@
 	const filtered = $derived(
 		components.filter(
 			(c) =>
-				c.name.toLowerCase().includes(query.toLowerCase()) ||
-				c.description.toLowerCase().includes(query.toLowerCase()),
+				c.name.toLowerCase().includes(query.toLowerCase()) || c.description.toLowerCase().includes(query.toLowerCase()),
 		),
 	);
 </script>
@@ -69,7 +68,11 @@
 			size={16}
 			class="pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 text-neutral-400"
 		/>
-		<Input bind:value={query} placeholder="Cari komponen..." class="h-9 rounded-xl bg-neutral-50 pl-9 dark:bg-white/5" />
+		<Input
+			bind:value={query}
+			placeholder="Cari komponen..."
+			class="h-9 rounded-xl bg-neutral-50 pl-9 dark:bg-white/5"
+		/>
 	</div>
 </div>
 
