@@ -1,4 +1,5 @@
 export { default as Block } from "./block.svelte";
+export { default as ComponentsGrid } from "./components-grid.svelte";
 export { default as InstallTabs } from "./install-tabs.svelte";
 export { default as PreviewTabs } from "./preview-tabs.svelte";
 export { default as PropsTable } from "./props-table.svelte";

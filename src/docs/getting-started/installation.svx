@@ -1,7 +1,7 @@
 ---
 title: Installation
 description: Panduan instalasi Polinema UI untuk HTML, PHP, Blade, dan React/Next.js.
-order: 2
+order: 3
 author: Polinema UI
 authorUrl: https://github.com/polinema-ui
 lastUpdated: 27/8/2026

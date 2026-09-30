@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question or discuss a topic
+    url: https://github.com/orgs/polinema-ui/discussions
+    about: Ask questions or discuss with other Polinema users in discussions.
+  - name: Security policy
+    url: https://github.com/polinema-ui/.github/security/policy
+    about: Review our security policy.

@@ -1,0 +1,24 @@
+---
+title: Components
+description: Temukan semua komponen Polinema UI yang siap pakai. Copy-paste satu file, langsung jalan di project lo.
+order: 2
+author: Polinema UI
+authorUrl: https://github.com/polinema-ui
+lastUpdated: 29/9/2026
+---
+
+<script lang="ts">
+	import { ComponentsGrid } from "$routes/docs/[...slug]/components";
+</script>
+
+<p class="leading-relaxed text-neutral-600 dark:text-neutral-400">
+	Di sini lo bisa nemuin semua komponen yang ada di Polinema UI. Modelnya copy-paste — bukan install package berat. Tinggal copy satu file <code class="rounded bg-black/5 px-1.5 py-0.5 font-mono text-xs dark:bg-white/10">.tsx</code> ke <code class="rounded bg-black/5 px-1.5 py-0.5 font-mono text-xs dark:bg-white/10">components/ui</code>, langsung pakai. Semua komponen udah support dark mode dan Tailwind v4.
+</p>
+
+## All Components
+
+<ComponentsGrid />
+
+<p class="mt-8 text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
+	Tidak menemukan yang lo cari? Cek <a href="/docs/getting-started/introduction" class="font-medium text-blue-600 hover:underline dark:text-blue-400">Introduction</a> atau buka <a href="https://github.com/polinema-ui/website" class="font-medium text-blue-600 hover:underline dark:text-blue-400">GitHub</a> untuk request komponen baru.
+</p>
