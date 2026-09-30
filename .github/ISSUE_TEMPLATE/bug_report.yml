@@ -1,0 +1,142 @@
+name: Bug report
+description: Report a bug in a Polinema UI component or the site
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! If you came from **Report issue** on the docs, the component and context below are prefilled in **Additional context** — just select the component in the dropdown and fill in the bug details.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected component(s)
+      description: Which component(s) does this bug affect? If you used Report issue on docs, please select the component shown in Additional context (GitHub can't auto-select dropdowns).
+      multiple: true
+      options:
+        - alert-dialog
+        - avatar
+        - badge
+        - breadcrumb
+        - button
+        - card
+        - carousel
+        - checkbox
+        - collapsible
+        - data-table
+        - dialog
+        - dropdown-menu
+        - empty
+        - input
+        - kbd
+        - label
+        - navbar
+        - pagination
+        - radio-group
+        - scroll-area
+        - select
+        - separator
+        - sheet
+        - sidebar
+        - skeleton
+        - sonner
+        - table
+        - textarea
+        - tooltip
+        - registry / CLI
+        - docs / site
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: Notification email
+      description: Email to receive ticket progress notifications (assigned, reviewed, merged/closed). Required for auto email updates.
+      placeholder: "your-name@pui.com"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what went wrong
+      placeholder: "Dialog doesn't close when pressing Escape…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Steps to reproduce, ideally with a minimal snippet or repo
+      placeholder: |
+        1. Install polinema-ui Button…
+        2. Render <Button> with variant…
+        3. Press Escape / click overlay…
+        4. See that…
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: "Button should show focus ring and trigger onClick."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened? Include screenshots or recordings if helpful
+      placeholder: "Nothing happens. No error in console."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: style
+    attributes:
+      label: Style / theme
+      description: Which base style are you using, if applicable?
+      multiple: false
+      options:
+        - default
+        - not sure
+        - not applicable
+      default: 0
+    validations:
+      required: false
+
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Relevant versions (polinema-ui, svelte, vite, package manager)
+      placeholder: "polinema-ui 0.0.1, svelte 5.56, vite 8.0, bun 1.2"
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser / environment
+      description: Browser, OS, or runtime where the bug occurs
+      placeholder: "Chrome 126 on macOS 15, Zen 1.14 on Windows 11, Node 22"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Anything else that might help (logs, links, workarounds)
+      render: text
+    validations:
+      required: false

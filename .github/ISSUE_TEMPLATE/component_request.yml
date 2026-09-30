@@ -1,0 +1,82 @@
+name: Component request
+description: Request a new component or a variant for Polinema UI
+title: "[Request]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Want a component that Polinema UI doesn't have yet? Tell us which one and why you need it.
+        Check the [Polinema UI docs](https://p-ui.dev) and component list first to see if it's already planned.
+
+  - type: input
+    id: component
+    attributes:
+      label: Component name
+      description: Which component are you requesting? (e.g. tabs, command, chart, date-picker)
+      placeholder: "date-picker"
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: Notification email
+      description: Email to receive ticket progress notifications (assigned, triaged, merged/closed).
+      placeholder: "your-name@pui.com"
+    validations:
+      required: true
+
+  - type: input
+    id: upstream
+    attributes:
+      label: Upstream reference
+      description: Link to a reference for the component (shadcn/svelte, svelte-headless, radix)
+      placeholder: "https://next.shadcn-svelte.com/docs/components/tabs"
+    validations:
+      required: false
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Use case / motivation
+      description: What are you trying to build? Why is this component needed for Polinema?
+      placeholder: "Need a date picker for the student attendance feature…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Proposed API / additional details
+      description: Any ideas on props, variants, or behavior? Leave blank if not sure
+      placeholder: |
+        - Should support single / range / multiple modes
+        - Should follow Plus Jakarta Sans typography
+        - Prior art: …
+      render: text
+    validations:
+      required: false
+
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Would you like to contribute this?
+      description: Are you willing to open a PR for it?
+      multiple: false
+      options:
+        - "No, just requesting"
+        - "Yes, I'd like to work on it"
+        - "Yes, I already have a draft / WIP"
+      default: 0
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Links, screenshots, or anything else
+      render: text
+    validations:
+      required: false
